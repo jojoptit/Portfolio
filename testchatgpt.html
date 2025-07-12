@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma Reconversion</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1501466044931-62695aada8e9?auto=format&fit=crop&w=1400&q=80'); /* Image USA */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* filtre sombre pour le texte lisible */
+      z-index: 0;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #1e3c72;
+    }
+
+    .interactive-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .interactive-box:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      background-color: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>De l’uniforme à la liberté</h1>
+    <p>Un nouveau départ, une nouvelle vie, un rêve américain en route</p>
+  </header>
+
+  <section>
+    <h2>Mon parcours</h2>
+    <div class="interactive-box">
+      <p>J’ai été militaire, puis policier. Ces années m'ont appris rigueur, résilience et engagement. Aujourd’hui, je veux me réinventer.</p>
+    </div>
+
+    <h2>Pourquoi cette reconversion ?</h2>
+    <div class="interactive-box">
+      <p>Je veux retrouver la liberté : travailler de chez moi, être indépendant, développer ma créativité et mieux équilibrer vie pro et perso.</p>
+    </div>
+
+    <h2>Mon projet futur</h2>
+    <div class="interactive-box">
+      <p>Je prépare mon expatriation aux États-Unis. Ce site est le début de ce chemin : partager, apprendre, construire quelque chose de nouveau.</p>
+    </div>
+  </section>
+
+  <footer>
+    Contact : <a href="mailto:ton.email@exemple.com" style="color: #fff;">ton.email@exemple.com</a>
+  </footer>
+
+  
+</body>
+</html>

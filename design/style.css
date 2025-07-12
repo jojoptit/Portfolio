@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    font-family: "pacifico", cursive;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #554d4d;
+}
+
+/* CONTENEUR GENERAL */
+.conteneur {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* LIENS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a, li {
+    color: orange;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 15px
+}
+
+/* HEADER */
+header {
+  font-size: 60px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+ color: rgb(253, 253, 253);
+ font-size: 11px;
+ font-weight: lighter;
+ padding: 10px;
+ background-image: url("https://img.freepik.com/vecteurs-libre/design-pattern-abstract_1053-524.jpg?t=st=1711093600~exp=1711094200~hmac=2f33b983b51dc7cd697359c9750ab8d01402c005ac2e50b906dc420b1cb7c99a");
+ background-size: 80px;
+ background-repeat: repeat;
+ margin-top: 100px;
+ text-align: center;
+ width: 100%;
+}
+
+.Flexbox-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- BIENVENUE --- */
+.Bienvenue {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/usa.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 20px 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 10px 8px 5px #000000
+}
+
+.titre {
+  font-size: 50px;
+  color: rgb(226, 156, 24);
+  margin: 0;
+}
+
+/* --- BULLE SECTION --- */
+.bulle-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 80px;
+    padding: 40px 0 0;
+}
+
+.bulle {
+  background-color: rgb(128, 53, 53);
+  color: rgb(212, 209, 201);
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px black;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  min-height: 400px;
+  text-align: center;
+  transition: transform 0.2s;
+  border: 5px solid transparent;
+  font-size: 25px;
+}
+
+.bulle:hover {
+  transform: scale(1.03);
+  border: 5px solid rgb(226, 156, 24);
+}
+
+.bulle h1 {
+ color: rgb(226, 156, 24);
+}
+
+/* RESPONSIV DESIGN */
+
+/* 1300 : Notebook */
+@media (max-width: 1400px) {
+  .bulle-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 768 : Tablette */
+@media (max-width: 800px) {
+  .bulle-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .Bienvenue {
+    padding: 150px 20px 60px 20px;
+  }
+
+  .titre {
+    font-size: 35px;
+  }
+  .Flexbox-foot {
+    flex-direction: column;
+  }
+  .Logo-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 480 : Smartphone */
+@media (max-width: 500px) {
+  .bulle {
+    font-size: 20px;
+    min-height: auto;
+  }
+
+  .Bienvenue {
+    padding: 100px 10px 40px 10px;
+  }
+
+  .titre {
+    font-size: 28px;
+  }
+}
